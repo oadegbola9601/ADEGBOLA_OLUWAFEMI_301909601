@@ -1,4 +1,4 @@
-# Retail ERP and POS Management System — database design
+# Retail ERP and POS Management System - database design
 
 My case study records store, product, sale, sale_line.
 
@@ -71,18 +71,17 @@ My case study records store, product, sale, sale_line.
 
 ## Relationships and business rules
 
-- Each product SKU is unique across the retailer.
-- Every sale references an existing store.
-- A receipt number may occur only once within a store; simultaneous duplicate receipt attempts are rejected by this constraint.
-- Every sale line references an existing sale.
-- Every sale line references an existing product.
-- Each sale line has quantity greater than zero and a nonnegative unit price.
+- Every product is identified by a unique SKU across the entire retail business.
+- Each sales transaction must be linked to a valid store record.
+- Receipt numbers cannot be duplicated within the same store. This ensures that no two transactions in a store share the same receipt number.
+- Every sales line item must be associated with an existing sales transaction.
+- Each sales line item must correspond to a valid product.
+- Quantities recorded on sales line items must be greater than zero, while unit prices cannot be negative.
 
 ## Assumptions
 
-- All records and benchmark inputs are synthetic; no real customer, employee, payment, or sales data is used.
-- Each entity has a single-column primary key, and ID values are allocated from one global namespace so keys are globally unique across these tables.
-- A receipt number is unique within a store, while a product SKU is unique across the retailer.
-- Sale lines refer to existing sales and products; line quantity must be positive and unit price nonnegative.
-- The normalization example focuses only on sale_line and its sale and product references; it does not repeat ancestor roles in that example.
-
+- The dataset and benchmark values used in this project are artificially generated and do not contain any real customer, employee, payment, or transaction information.
+- Each table uses a single-field primary key. Key values are assigned from a shared global numbering scheme, ensuring that identifiers remain unique across all tables.
+- Product SKUs are unique throughout the retailer, whereas receipt numbers are unique only within an individual store.
+- Sales line items can only reference sales transactions and products that already exist in the database. In addition, quantities must be positive and unit prices must be zero or greater.
+- The normalization example is limited to the sale_line table and its relationships with the sale and product tables. Higher-level entities and relationships are intentionally excluded for simplicity and clarity.
