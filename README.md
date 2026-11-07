@@ -1,7 +1,13 @@
-# OLUWAFEMI ADEGBOLA — MIT 8103
+# Retail ERP and POS Management System
 
-Student ID: 301909601
+OLUWAFEMI ADEGBOLA · Student ID 301909601
 
-Retail ERP and POS Management System
+The portfolio uses fictional records for Retail ERP and POS Management System.
 
-The portfolio is being generated. Completed stages will appear in the commit history.
+- [Portfolio 1](portfolio-1-database-design/)
+- [Portfolio 2](portfolio-2-query-optimisation/)
+- [Portfolio 3](portfolio-3-transactions-concurrency/)
+- [Portfolio 4](portfolio-4-nosql/)
+- [Portfolio 5](portfolio-5-distributed-cloud/)
+
+[Final summary](ADEGBOLA_OLUWAFEMI_301909601_FinalSummary.md) · [PDF](ADEGBOLA_OLUWAFEMI_301909601_FinalSummary.pdf)
