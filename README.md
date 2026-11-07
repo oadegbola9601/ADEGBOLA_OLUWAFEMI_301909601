@@ -2,7 +2,7 @@
 
 OLUWAFEMI ADEGBOLA · Student ID 301909601
 
-The portfolio uses fictional records for Retail ERP and POS Management System.
+As an ERP/SAP Specialist, I am able to use this case study. The portfolio uses fictional records for Retail ERP and POS Management System.
 
 - [Portfolio 1](portfolio-1-database-design/)
 - [Portfolio 2](portfolio-2-query-optimisation/)
